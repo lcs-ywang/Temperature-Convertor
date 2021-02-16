@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3C80D91525CA3CFC00B0D833 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D91425CA3CFC00B0D833 /* main.swift */; };
+		3C80D91D25CA41F100B0D833 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D91C25CA41F100B0D833 /* Extension.swift */; };
+		3C80D92C25CB0F8400B0D833 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D92B25CB0F8400B0D833 /* main.swift */; };
+		3C80D93225CB0F9400B0D833 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D91C25CA41F100B0D833 /* Extension.swift */; };
+		3C80D93825CB0FC600B0D833 /* Funtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D93725CB0FC600B0D833 /* Funtion.swift */; };
+		3C80D93925CB0FC600B0D833 /* Funtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80D93725CB0FC600B0D833 /* Funtion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +25,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3C80D92725CB0F8400B0D833 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C80D91125CA3CFC00B0D833 /* Temperature Convertor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Temperature Convertor"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C80D91425CA3CFC00B0D833 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3C80D91C25CA41F100B0D833 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3C80D92B25CB0F8400B0D833 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3C80D93725CB0FC600B0D833 /* Funtion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funtion.swift; sourceTree = "<group>"; };
+		3CDCDD0C25DC5601007FEB5F /* Temperature Convertor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Temperature Convertor"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDCDD0D25DC5601007FEB5F /* Time convertor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time convertor"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C80D90E25CA3CFC00B0D833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C80D92625CB0F8400B0D833 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,17 +66,13 @@
 		3C80D90825CA3CFC00B0D833 = {
 			isa = PBXGroup;
 			children = (
+				3C80D93725CB0FC600B0D833 /* Funtion.swift */,
+				3C80D91C25CA41F100B0D833 /* Extension.swift */,
 				3C80D91325CA3CFC00B0D833 /* Temperature Convertor */,
-				3C80D91225CA3CFC00B0D833 /* Products */,
+				3C80D92A25CB0F8400B0D833 /* Length convertor */,
+				3CDCDD0C25DC5601007FEB5F /* Temperature Convertor */,
+				3CDCDD0D25DC5601007FEB5F /* Time convertor */,
 			);
-			sourceTree = "<group>";
-		};
-		3C80D91225CA3CFC00B0D833 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3C80D91125CA3CFC00B0D833 /* Temperature Convertor */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3C80D91325CA3CFC00B0D833 /* Temperature Convertor */ = {
@@ -60,6 +81,14 @@
 				3C80D91425CA3CFC00B0D833 /* main.swift */,
 			);
 			path = "Temperature Convertor";
+			sourceTree = "<group>";
+		};
+		3C80D92A25CB0F8400B0D833 /* Length convertor */ = {
+			isa = PBXGroup;
+			children = (
+				3C80D92B25CB0F8400B0D833 /* main.swift */,
+			);
+			path = "Length convertor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +108,24 @@
 			);
 			name = "Temperature Convertor";
 			productName = "Temperature Convertor";
-			productReference = 3C80D91125CA3CFC00B0D833 /* Temperature Convertor */;
+			productReference = 3CDCDD0C25DC5601007FEB5F /* Temperature Convertor */;
+			productType = "com.apple.product-type.tool";
+		};
+		3C80D92825CB0F8400B0D833 /* Time convertor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C80D92D25CB0F8400B0D833 /* Build configuration list for PBXNativeTarget "Time convertor" */;
+			buildPhases = (
+				3C80D92525CB0F8400B0D833 /* Sources */,
+				3C80D92625CB0F8400B0D833 /* Frameworks */,
+				3C80D92725CB0F8400B0D833 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time convertor";
+			productName = "Time convertor";
+			productReference = 3CDCDD0D25DC5601007FEB5F /* Time convertor */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -94,6 +140,9 @@
 					3C80D91025CA3CFC00B0D833 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					3C80D92825CB0F8400B0D833 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 3C80D90C25CA3CFC00B0D833 /* Build configuration list for PBXProject "Temperature Convertor" */;
@@ -105,11 +154,12 @@
 				Base,
 			);
 			mainGroup = 3C80D90825CA3CFC00B0D833;
-			productRefGroup = 3C80D91225CA3CFC00B0D833 /* Products */;
+			productRefGroup = 3C80D90825CA3CFC00B0D833;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3C80D91025CA3CFC00B0D833 /* Temperature Convertor */,
+				3C80D92825CB0F8400B0D833 /* Time convertor */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +169,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C80D93825CB0FC600B0D833 /* Funtion.swift in Sources */,
 				3C80D91525CA3CFC00B0D833 /* main.swift in Sources */,
+				3C80D91D25CA41F100B0D833 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C80D92525CB0F8400B0D833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C80D93925CB0FC600B0D833 /* Funtion.swift in Sources */,
+				3C80D93225CB0F9400B0D833 /* Extension.swift in Sources */,
+				3C80D92C25CB0F8400B0D833 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +321,24 @@
 			};
 			name = Release;
 		};
+		3C80D92E25CB0F8400B0D833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3C80D92F25CB0F8400B0D833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +356,15 @@
 			buildConfigurations = (
 				3C80D91925CA3CFC00B0D833 /* Debug */,
 				3C80D91A25CA3CFC00B0D833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C80D92D25CB0F8400B0D833 /* Build configuration list for PBXNativeTarget "Time convertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C80D92E25CB0F8400B0D833 /* Debug */,
+				3C80D92F25CB0F8400B0D833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
